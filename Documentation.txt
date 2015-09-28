@@ -1,0 +1,19 @@
+Code takes in the CSV file and iterates through it row by row, placin the data in two lists (Multiple options available - list of lists and dictionaries)
+Set up the Twilio Client with variables for account number and token
+Create the twilio call that the TO part pulls the numbers from the numbers list
+FROM is my twilio number
+URL is some backing music
+
+Use the same index value of the name list to output who the program is calling
+Iterate through the list using a for loop. Opted to go this way so that the program would work no matter how big the csv.
+
+PLEASE NOTE - twilio demo account will not call none verified numbers, it rings my number at the start of the loop then it will
+throw an error because the other two numbers in the csv are not twilio verified. I have tried the call with my own and someone elses
+phone and it calls fine (changed the list values to check).
+
+Did not manage to get twilio to say the greeting. The code at the bottom works for INCOMING calls.
+Uses the response and then the primary verbs of say.
+
+Looked into how to send out text to speech but my research and liaisons with some friends leads me to think I would need Flask and a server.
+Checked as much documentation as possible and I cannot find how to utilise text to speech on an outgoing call.
+I looked into SMS as a way to message the numbers but it is not what the scenario wanted.
